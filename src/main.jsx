@@ -14,6 +14,7 @@ import Assign from "./components/Dashboard/Assign.jsx";
 import Managetask from "./components/Dashboard/Managetask.jsx";
 import Task from "./components/Dashboard/Task.jsx";
 import TodoList from "./components/Dashboard/TodoList.jsx";
+import Update from "./components/Dashboard/Update.jsx";
 
 const router = createBrowserRouter([
     {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
             {
                 path: "/Contact",
                 element: <Contact />,
+            },
+            {
+                path: "/update/:taskId",
+                element: <Update />,
             },
         ],
     },

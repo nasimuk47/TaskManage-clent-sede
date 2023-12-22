@@ -54,11 +54,6 @@ const Dashboard = () => {
                             To-doList
                         </NavLink>
                     </li>
-                    <li>
-                        <NavLink to="/dashboard/managetask">
-                            <FaTasks /> Manage Task
-                        </NavLink>
-                    </li>
                     <div className="divider"></div>
                     <li>
                         <NavLink to="/">

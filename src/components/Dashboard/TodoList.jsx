@@ -2,7 +2,8 @@
 import React, { useState, useEffect, useContext } from "react";
 import axios from "axios";
 import { AuthContext } from "../Security/AuthProvider";
-import { FaTrash } from "react-icons/fa";
+import { FaRegEdit, FaTrash } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const TodoList = () => {
     const [tasks, setTasks] = useState([]);
@@ -75,12 +76,21 @@ const TodoList = () => {
                                         <p className="text-xs md:text-sm">
                                             Priority: {task.priority}
                                         </p>
-                                        <button
-                                            onClick={() =>
-                                                handleDelete(task._id)
-                                            }>
-                                            <FaTrash className="text-red-500" />
-                                        </button>
+
+                                        <div className="flex gap-1">
+                                            <button
+                                                className="btn"
+                                                onClick={() =>
+                                                    handleDelete(task._id)
+                                                }>
+                                                <FaTrash className="text-red-500" />
+                                            </button>{" "}
+                                            <Link to={`/update/${task._id}`}>
+                                                <button className="btn text-red-500">
+                                                    <FaRegEdit /> edit
+                                                </button>
+                                            </Link>
+                                        </div>
                                     </div>
                                 </div>
                             ))}
