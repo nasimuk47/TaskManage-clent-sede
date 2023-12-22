@@ -14,7 +14,7 @@ const TodoList = () => {
         const fetchData = async () => {
             try {
                 const response = await axios.get(
-                    "http://localhost:5000/AllTask"
+                    "https://taskmanagement-server-side.vercel.app/AllTask"
                 );
                 if (Array.isArray(response.data)) {
                     setTasks(response.data);
@@ -38,7 +38,7 @@ const TodoList = () => {
         try {
             console.log("Deleting task with ID:", taskId);
             const response = await axios.delete(
-                `http://localhost:5000/AllTask/${taskId}`
+                `https://taskmanagement-server-side.vercel.app/AllTask/${taskId}`
             );
 
             console.log("Response:", response.data);

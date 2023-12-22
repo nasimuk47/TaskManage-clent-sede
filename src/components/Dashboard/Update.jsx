@@ -17,7 +17,7 @@ const Update = () => {
         const fetchTask = async () => {
             try {
                 const response = await axios.get(
-                    `http://localhost:5000/AllTask/${taskId}`
+                    `https://taskmanagement-server-side.vercel.app/AllTask/${taskId}`
                 );
                 setTaskData(response.data);
             } catch (error) {
@@ -41,7 +41,7 @@ const Update = () => {
 
         try {
             const response = await axios.put(
-                `http://localhost:5000/AllTask/${taskId}`,
+                `https://taskmanagement-server-side.vercel.app/AllTask/${taskId}`,
                 taskData
             );
             console.log("Update Response:", response.data);

@@ -10,7 +10,7 @@ const Task = () => {
         const fetchData = async () => {
             try {
                 const response = await axios.get(
-                    "http://localhost:5000/AllTask"
+                    "https://taskmanagement-server-side.vercel.app/AllTask"
                 );
                 if (Array.isArray(response.data)) {
                     setTasks(response.data);
@@ -43,7 +43,7 @@ const Task = () => {
 
         try {
             const response = await axios.put(
-                "http://localhost:5000/AllTask/status",
+                "https://taskmanagement-server-side.vercel.app/AllTask/status",
                 {
                     taskId: movedTask._id,
                     status: result.destination.droppableId,

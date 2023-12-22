@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import TaskManagementImage from "../../assets/photo/pexels-mikhail-nilov-7988079.jpg";
+import TaskManagementImage from "../../assets/banner/pngtree-business-team-banner-task-management-image_1312343.jpg";
 import { Link } from "react-router-dom";
 
 const Banner = () => {
@@ -16,11 +16,9 @@ const Banner = () => {
                 variants={bannerVariants}
                 initial="hidden"
                 animate="visible"
-                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-sky-500">
-                <h1 className="text-6xl font-bold">Task Management Platform</h1>
-
+                className="absolute top-[80%] left-[70%] transform -translate-x-1/2 -translate-y-1/2 text-center text-sky-500">
                 <Link to="Login">
-                    <button className="btn btn-primary mt-5">
+                    <button className="btn btn-accent mt-5">
                         Let’s Explore
                     </button>
                 </Link>

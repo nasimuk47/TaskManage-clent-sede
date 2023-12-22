@@ -14,13 +14,13 @@ const Navbar = () => {
 
     const navOptions = (
         <>
-            <li className="active:btn  text-lg  text-blue-500  btn-info tpy-2 px-3">
+            <li className="active:btn  text-lg  text-black  btn-info tpy-2 px-3">
                 <Link to="/">Home</Link>
             </li>
-            <li className="active:btn text-lg range-lg  text-blue-500  tpy-2 px-3">
+            <li className="active:btn text-lg range-lg  text-black  tpy-2 px-3">
                 <Link to="/About">About</Link>
             </li>
-            <li className="active:btn text-lg  text-blue-500 tpy-2 px-3">
+            <li className="active:btn text-lg  text-black tpy-2 px-3">
                 <Link to="/Contact">Contact</Link>
             </li>
         </>
@@ -48,7 +48,7 @@ const Navbar = () => {
                         </label>
                         <ul
                             tabIndex={0}
-                            className="menu menu-compact z-40 bg-black dropdown-content mt-3 p-2 shadow  rounded-box w-52">
+                            className="menu menu-compact z-40 bg-white dropdown-content mt-3 p-2 shadow  rounded-box w-52">
                             {navOptions}
                         </ul>
                     </div>

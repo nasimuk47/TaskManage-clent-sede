@@ -24,7 +24,7 @@ const Assign = () => {
 
         try {
             const response = await axios.post(
-                "http://localhost:5000/AllTask",
+                "https://taskmanagement-server-side.vercel.app/AllTask",
                 taskData
             );
 
